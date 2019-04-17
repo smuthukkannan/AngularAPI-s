@@ -1,0 +1,14 @@
+<div>
+    <h2 mat-dialog-title>CONFIRMATION</h2>    
+    <div mat-dialog-content>
+        <span style="font-size: 15px;font-weight: 500;">Are you sure want to leave this page?</span>
+        <span style="font-size: 15px;font-weight: 500;">Changes that you made may not be saved.</span>
+    </div>
+    
+    <div mat-dialog-actions class="btn-align-right">
+        <button mat-button tabindex="1" id="btn_yes" [mat-dialog-close]="data" (click)="data.answer = true">
+            <!--{{'generalInfo.confirmationdialog.yes' | translate}}-->Yes</button>
+        <button mat-button [mat-dialog-close]="data" tabindex="2" id="btn_no" (click)="data.answer = false">
+            <!--{{'generalInfo.confirmationdialog.no' | translate}}-->No</button>
+    </div>
+</div>
